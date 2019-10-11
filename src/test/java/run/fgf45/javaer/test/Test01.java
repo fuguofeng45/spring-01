@@ -21,7 +21,7 @@ public class Test01 {
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext.xml");
         Student student = (Student) context.getBean("student", Student.class);
-        System.out.println(student);
+        student.showLandlord();
     }
 
 }
