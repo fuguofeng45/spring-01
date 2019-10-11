@@ -27,7 +27,7 @@ public class Broker {
     @Around("execution(* run.fgf45.javaer.entity.Landlord.service())")
     public void around(ProceedingJoinPoint joinPoint) {
         System.out.println("带租客看房");
-        System.out.println("谈价格");
+        System.out.println("谈价格1");
 
         try {
             joinPoint.proceed();
